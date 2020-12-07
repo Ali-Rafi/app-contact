@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.ainz.app_contact.ui.FragmentHome"
+        android:label="Kontak"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/fragmentAdd"
+        android:name="com.ainz.app_contact.ui.FragmentAdd"
+        android:label="Tambah Kontak"
+        tools:layout="@layout/fragment_add"/>
+
+    <fragment
+        android:id="@+id/fragmentAbout"
+        android:name="com.ainz.app_contact.ui.FragmentAbout"
+        android:label="Kelompok"
+        tools:layout="@layout/fragment_about"/>
+
+</navigation>

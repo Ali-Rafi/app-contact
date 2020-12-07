@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_kontak"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_account"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNama"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-black"
+        android:hint="Nama"
+        android:textColor="#000000"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@+id/img_kontak" />
+
+    <TextView
+        android:id="@+id/lblTelepon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="Telepon"
+        app:layout_constraintTop_toBottomOf="@+id/lblNama"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@+id/img_kontak"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="112dp"
+        android:hint="07 Desember 2020"
+        app:layout_constraintLeft_toRightOf="@+id/lblNama"
+        tools:layout_editor_absoluteY="10dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
